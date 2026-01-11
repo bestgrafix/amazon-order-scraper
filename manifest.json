@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Ben's Amazon Order Scraper",
+  "version": "2.1",
+  "description": "Scraped Amazon Bestellungen inkl. Detailseiten und exportiert sie als CSV",
+  "icons": {
+    "512": "icon512.png"
+
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "512": "icon512.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.de/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://*.amazon.de/*"
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Bestellungen Export 2.1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      margin: 10px;
+      min-width: 320px;
+    }
+    h1 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    label {
+      display: block;
+      margin-top: 6px;
+    }
+    select {
+      width: 100%;
+      padding: 3px;
+      margin-top: 2px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 8px;
+      padding: 4px 6px;
+      display: none;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+    #status.info {
+      background: #e8f4ff;
+      color: #00529b;
+    }
+    #status.success {
+      background: #e7f7e7;
+      color: #2e7d32;
+    }
+    #status.error {
+      background: #ffebee;
+      color: #c62828;
+    }
+    #counter {
+      margin-top: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Amazon Bestellungen Export</h1>
+
+  <label for="timeFilter">
+    Zeitraum:
+  </label>
+  <select id="timeFilter">
+    <option value="current-month">Aktueller Monat</option>
+    <option value="last-month">Letzter Monat</option>
+    <option value="months-3">Letzte 3 Monate</option>
+    <option value="year-2025">Jahr 2025</option>
+  </select>
+
+  <button id="scrapeBtn">Alle Seiten scrapen (mit Details)</button>
+  <button id="downloadCsvBtn" disabled>CSV herunterladen</button>
+
+  <div id="counter"></div>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
