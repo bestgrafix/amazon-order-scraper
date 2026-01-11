@@ -1,23 +1,40 @@
-## How to Use the Amazon Orders Export Extension
+## Installation der Amazon-Bestellungen-Extension
 
-1. **Open your Amazon orders**
-   - In Chrome, go to `amazon.de` and open **Your Orders** (order history page).
+1. **Erweiterungsseite in Chrome öffnen**  
+   - In die Adresszeile `chrome://extensions/` eingeben und Enter drücken.
 
-2. **Open the extension popup**
-   - Click the extension icon in the Chrome toolbar to open the popup window.  
+2. **Entwicklermodus aktivieren**  
+   - Rechts oben den Schalter **„Entwicklermodus“** einschalten.
 
-3. **Select the time range**
-   - Use the dropdown to choose a period, for example:
-     - *Current month*
-     - *Last month*
-     - *Last 3 months*
-     - *Year 2025*  
+3. **Entpackte Erweiterung laden**  
+   - Auf **„Entpackte Erweiterung laden“** klicken.  
+   - Den Ordner auswählen, der `manifest.json`, `popup.html` und `popup.js` enthält.
 
-4. **Start scraping**
-   - Click **“Scrape all pages (with details)”**.
-   - Wait while the extension loads each orders overview page and the related order detail pages.  
-   - A counter shows how many orders have been found.  
+4. **Installation prüfen**  
+   - Die Erweiterung erscheint in der Liste.  
+   - Über das Puzzle-Symbol in der Toolbar kann sie angeheftet werden, um sie schneller zu erreichen.
 
-5. **Download the CSV file**
-   - When the status indicates the process is finished and **“Download CSV”** is enabled, click it.
-   - Save the CSV file and open it in Excel or another spreadsheet program to analyze your orders, items, totals, and payment methods.
+---
+
+## Nutzung der Extension
+
+1. **Amazon-Bestellübersicht öffnen**  
+   - In Chrome `amazon.de` aufrufen und **„Meine Bestellungen“** (Bestellübersicht) öffnen.
+
+2. **Popup der Erweiterung öffnen**  
+   - Auf das Symbol der Erweiterung in der Chrome-Toolbar klicken.
+
+3. **Zeitraum wählen**  
+   - Im Dropdown einen Zeitraum auswählen, z. B.:
+     - *Aktueller Monat*
+     - *Letzter Monat*
+     - *Letzte 3 Monate*
+     - *Jahr 2025*
+
+4. **Scraping starten**  
+   - Auf **„Alle Seiten scrapen (mit Details)“** klicken.  
+   - Warten, bis alle Übersichts- und Detailseiten geladen wurden; der Zähler zeigt die Anzahl gefundener Bestellungen/Artikel.
+
+5. **CSV-Datei herunterladen**  
+   - Wenn der Vorgang fertig ist und **„CSV herunterladen“** aktiv ist, darauf klicken.  
+   - Die CSV-Datei speichern und z. B. in Excel oder einem anderen Tabellenprogramm öffnen, um Bestellungen, Artikel, Gesamtsummen und Zahlungsarten auszuwerten.
